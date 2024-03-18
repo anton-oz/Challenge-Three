@@ -15,17 +15,48 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  if (addEmployeesBtn) {
-    prompt("Employee first name: ")
-    prompt("Employee last name: ")
-    prompt("Employee salary: ")
-    
+  let employee = {
+    firstName: null, 
+    lastName: null, 
+    salary: null
   }
+
+  let employeesArray = [];
+
+  while (true) {
+    employee.firstName = prompt("Enter employee first name: ")
+    if (!employee.firstName) {
+      break
+    }
+
+    employee.lastName = prompt("Enter employee last name: ")
+    if (!employee.lastName) {
+      break
+    }
+
+    employee.salary = prompt("Enter employee salary: ")
+    if (!employee.salary) {
+      break
+    }
+
+    employeesArray.push(employee)
+
+    if (!confirm('Would you like to add another employee?')) {
+      break
+    }    
+  }
+
+  console.log(employeesArray)
 }
+
+
+
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  // TODO: Calculate and display thegit average salary
+
 }
 
 // Select a random employee

@@ -44,11 +44,11 @@ Sources:
 
 [JavaScript how to get user input](https://codehs.com/tutorial/rachel/user-input-in-javascript)\
 
-[]()
+[For loop JavaScript](https://www.w3schools.com/js/js_loop_for.asp)
 
-[]()
+[On click JavaScript](https://www.w3schools.com/jsref/event_onclick.asp)
 
-[]()
+[While Loop](https://www.w3schools.com/js/js_loop_while.asp)
 
 []()
 
