@@ -50,6 +50,14 @@ Sources:
 
 [While Loop](https://www.w3schools.com/js/js_loop_while.asp)
 
+[JavaScript Map()](https://www.w3schools.com/jsref/jsref_map.asp)
+
+[]()
+
+[]()
+
+[]()
+
 []()
 
 ## License
