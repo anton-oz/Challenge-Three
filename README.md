@@ -60,6 +60,8 @@ Sources:
 
 [check if string has only numbers or contains letters](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=You%20can%20use%20this%20behavior,isNaN(Number(str))%3B)
 
+[Chrome task manager to break javascript loops during debugging](https://stackoverflow.com/questions/13134723/how-to-terminate-script-execution-when-debugging-in-google-chrome)
+
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
