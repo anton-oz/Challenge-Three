@@ -52,11 +52,11 @@ Sources:
 
 [JavaScript Map()](https://www.w3schools.com/jsref/jsref_map.asp)
 
-[]()
+[code for random selector](https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array)
 
-[]()
+[how to change string to integer](https://stackoverflow.com/questions/17907455/how-to-get-numeric-value-from-a-prompt-box)
 
-[]()
+[how to concat strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 
 []()
 

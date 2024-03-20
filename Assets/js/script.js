@@ -35,7 +35,8 @@ const collectEmployees = function() {
       break
     }
 
-    employee.salary = prompt("Enter employee salary: ")
+    employee.salary = prompt("Enter employee salary (no comma's or dollar signs!): ")
+    employee.salary = parseInt(employee.salary);
     if (!employee.salary) {
       break
     }
@@ -55,27 +56,31 @@ const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
   let salaries = employeesArray.map(sal => sal.salary);
 
-  let numSalaries = salaries.map(Number);
-
   let sum = 0;
 
-  let salArrLen = numSalaries.length;
+  let salArrLen = salaries.length;
 
-  for (salary in numSalaries) {
-    sum += numSalaries[salary]
+  for (salary in salaries) {
+    sum += salaries[salary]
   };
 
   let average = sum / salArrLen;
 
+  console.log(`The average employee salary between ${salaries.length} employee(s) is $${average}`)
   return average;
-
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+
+  // code for random selector I used from stack overflow, link is in README.md under "code for random selector"
   const randomElement = employeesArray[Math.floor(Math.random() * employeesArray.length)];
-  return randomElement;
+
+  let employeeName = randomElement.firstName.concat(" ", randomElement.lastName);
+
+  console.log(`Our lucky random winnder is ${employeeName}!`);
+  return employeeName;
 }
 
 /*
