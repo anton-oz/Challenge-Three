@@ -58,7 +58,7 @@ Sources:
 
 [how to concat strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 
-[]()
+[check if string has only numbers or contains letters](https://pandaquests.medium.com/5-easy-ways-to-check-if-a-string-contains-only-numbers-in-javascript-305db38625e8#:~:text=You%20can%20use%20this%20behavior,isNaN(Number(str))%3B)
 
 ## License
 

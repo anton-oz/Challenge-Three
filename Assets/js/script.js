@@ -12,13 +12,15 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
+// globally declared employees array so that it can be called on by the prewritten functions.
 let employeesArray = [];
 
 // Collect employee data
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects
+
   while (true) {
 
+    // define employee object
     let employee = {
       firstName: null, 
       lastName: null, 
@@ -35,8 +37,28 @@ const collectEmployees = function() {
       break
     }
 
-    employee.salary = prompt("Enter employee salary (no comma's or dollar signs!): ")
-    employee.salary = parseInt(employee.salary);
+    employee.salary = prompt("Enter employee salary (NUMBERS ONLY): ")
+    
+    if (!employee.salary) {
+      break
+    }
+
+    // Code from Medium linked in README, checks if string contains letters or only numbers 
+    const onlyContainsNumbers = (str) => /^\d+$/.test(str);
+
+    // loop to keep prompting user to enter numerical value for salary so app doesn't break
+    let x = 1;
+    while (x === 1) {
+      if (onlyContainsNumbers(employee.salary) === false) {
+        employee.salary = prompt("Please enter employee salary in NUMERICAL FORMAT ONLY: ")
+        if (!employee.salary) {
+          break
+        }
+      } else {
+        employee.salary = parseInt(employee.salary);
+        x = 0  
+      }
+    }
     if (!employee.salary) {
       break
     }
@@ -53,7 +75,8 @@ const collectEmployees = function() {
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+
+  // take salary values from employee object array and put those values in new array
   let salaries = employeesArray.map(sal => sal.salary);
 
   let sum = 0;
@@ -66,21 +89,22 @@ const displayAverageSalary = function(employeesArray) {
 
   let average = sum / salArrLen;
 
-  console.log(`The average employee salary between ${salaries.length} employee(s) is $${average}`)
-  return average;
+  let final = console.log(`The average employee salary between ${salaries.length} employee(s) is $${average}`)
+
+  return final;
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
 
   // code for random selector I used from stack overflow, link is in README.md under "code for random selector"
   const randomElement = employeesArray[Math.floor(Math.random() * employeesArray.length)];
 
   let employeeName = randomElement.firstName.concat(" ", randomElement.lastName);
 
-  console.log(`Our lucky random winnder is ${employeeName}!`);
-  return employeeName;
+  let final = console.log(`Our lucky random winnder is ${employeeName}!`);
+
+  return final;
 }
 
 /*
