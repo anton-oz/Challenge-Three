@@ -1,4 +1,4 @@
-# Challenge Three
+# Challenge Three - Anton Osland
 
 ## Description
 
