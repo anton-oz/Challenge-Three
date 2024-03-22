@@ -2,20 +2,15 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-For this application I was given a prebuilt website with some inoperable javascript functions. I made the functions operational so that the when the user clicks the "Add Employees" button, they are presented with prompts to add a first name, last name, and employee salary (employee salary must take numerical input). The values given for each prompt are stored in an employee object, which is stored in an array. After the user enters an employee they are asked to confirm or deny if they would like to add another employee, which restarts the intial add employee process or stops when they have added the desired number of employees. I learned how useful loops are for writing DRY code, and improved my knowledge on how to access object values when stored in an array.
+For this application I was given a prebuilt website with some inoperable javascript functions. I made the functions operational so that the when the user clicks the "Add Employees" button, they are presented with prompts to add a first name, last name, and employee salary (employee salary must take numerical input). The values given for each prompt are stored in an employee object, which is stored in an array. After the user enters an employee they are asked to confirm or deny if they would like to add another employee, which restarts the intial add employee process or stops when they have added the desired number of employees. During development of this app I learned how useful loops are for writing DRY code, and improved my knowledge on how to access object values when stored in an array. I used console.log() quite a bit to track my progress 
 
 ## Installation
 
-[Live Website!]()
+[Live Website!](https://anton-oz.github.io/Challenge-Three/)
 
 ## Usage
+
+[Website Screenshot!](./Assets/screenshot/screenshot.png)
 
 To use the website navigate to the live site, then click the add employees button and add the desired employee information. After finishing you will be presented with a table of the employees sorted in alphabetical order by last name. Open the console to see the array of employee objects, the average employee salary, and a randomly selected employee.
 

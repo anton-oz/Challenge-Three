@@ -43,7 +43,7 @@ const collectEmployees = function() {
       break
     }
 
-    // Code from Medium linked in README, checks if string contains letters or only numbers 
+    // Code from Medium checks if string contains letters or only numbers, linked in README under 'check if string has only numbers or contains letters'
     const onlyContainsNumbers = (str) => /^\d+$/.test(str);
 
     // loop to keep prompting user to enter numerical value for salary so app doesn't break
@@ -97,7 +97,7 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
 
-  // code for random selector I used from stack overflow, link is in README.md under "code for random selector"
+  // code for random selector I used from stack overflow, link is in README.md under 'code for random selector'
   const randomElement = employeesArray[Math.floor(Math.random() * employeesArray.length)];
 
   let employeeName = randomElement.firstName.concat(" ", randomElement.lastName);
